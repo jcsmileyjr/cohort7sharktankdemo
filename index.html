@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shark Tank Presentations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header banner: static content, same on every render -->
+  <header class="site-header">
+    <h1>Cohort 7 &mdash; Shark Tank Presentations</h1>
+    <p>Each student pitched a project idea to a panel of judges. Click "Next" to browse everyone's pitch.</p>
+  </header>
+
+  <!-- Student card: contents are filled in by renderStudent() in script.js -->
+  <main class="student-card">
+    <img id="student-photo" class="student-photo" src="" alt="" />
+    <h2 id="student-name" class="student-name"></h2>
+    <h3 id="student-title" class="student-title"></h3>
+    <p id="student-description" class="student-description"></p>
+    <p id="position-indicator" class="position-indicator"></p>
+    <button id="next-button" class="next-button">Next &#8635;</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

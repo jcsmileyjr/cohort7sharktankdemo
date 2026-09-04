@@ -1,0 +1,121 @@
+/*
+  =========================================================================
+  5. STYLING SYSTEM
+  Concept: mobile-first responsive design.
+  One stacked layout is used at every screen width - a wider viewport just
+  gets a bit more breathing room via the centered, max-width container.
+  There are no breakpoints that switch to a side-by-side layout.
+  =========================================================================
+*/
+
+:root {
+  --navy: #0b2545;
+  --gold: #c9a227;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  color: var(--navy);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+/* Header banner: navy background, white text (13.6:1 contrast) */
+.site-header {
+  background-color: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.site-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.site-header p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Student card: single stacked column, centered with a max width */
+.student-card {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.student-photo {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 4px solid var(--navy);
+}
+
+.student-name {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.5rem;
+}
+
+.student-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.student-description {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* line-clamp safety net: keeps card height consistent even if a
+     description ends up longer than expected */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.position-indicator {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* Next button: gold background, navy text (never white-on-gold) */
+.next-button {
+  margin-top: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  background-color: var(--gold);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  opacity: 0.9;
+}
+
+.next-button:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 2px;
+}
