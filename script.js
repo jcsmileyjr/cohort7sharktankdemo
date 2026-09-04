@@ -90,13 +90,24 @@ function renderStudent() {
   Concept: event listeners, the modulo operator.
   Clicking "Next" advances currentIndex, wrapping back to 0 after the
   last student, then re-renders the page using the same render function.
+
+  The fade is pure CSS (see the .fade-out rule in style.css) - this
+  handler just toggles that class before and after the state/render
+  update so the swap doesn't feel instant.
   =========================================================================
 */
 const nextButton = document.querySelector("#next-button");
+const studentCard = document.querySelector(".student-card");
+const FADE_DURATION_MS = 200;
 
 nextButton.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % students.length;
-  renderStudent();
+  studentCard.classList.add("fade-out");
+
+  setTimeout(() => {
+    currentIndex = (currentIndex + 1) % students.length;
+    renderStudent();
+    studentCard.classList.remove("fade-out");
+  }, FADE_DURATION_MS);
 });
 
 // Initial render on page load - same function used for every click above
