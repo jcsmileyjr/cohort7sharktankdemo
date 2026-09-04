@@ -27,10 +27,22 @@ body {
     Helvetica, Arial, sans-serif;
 }
 
-/* Header banner: subtle navy gradient, white text (contrast still passes) */
+/* Particle background: fixed full-screen canvas drawn behind every other
+   element. Animation logic lives in particles.js - this just places it. */
+#particle-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Header banner: no background of its own now - the particle canvas
+   shows through, so text goes back to navy on the light page background */
 .site-header {
-  background: linear-gradient(135deg, #0b2545 0%, #163a63 100%);
-  color: var(--white);
+  color: var(--navy);
   text-align: center;
   padding: 2rem 1.5rem;
 }
@@ -51,7 +63,7 @@ body {
 .site-header p {
   margin: 0;
   font-size: 1rem;
-  opacity: 0.9;
+  opacity: 0.75;
 }
 
 /* Student card: single stacked column, centered with a max width.
