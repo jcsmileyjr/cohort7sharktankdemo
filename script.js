@@ -15,18 +15,18 @@ const students = [
       "A nonprofit organization designed to assist justice-impacted individuals by pairing documentary film production with technical training, wraparound support, and direct employer placement"
   },
   {
-    name: "Jordan Lee",
+    name: "James Evely",
     photo: "images/student2.jpg",
-    title: "StudyLoop: Flashcard Scheduler",
+    title: "Stockflow",
     description:
-      "A web app that schedules flashcard reviews using spaced repetition, so students spend less time cramming. Jordan designed it to fit around a full-time class schedule and a part-time job."
+      "A Nashville-based service designed to help small business owners manage inventory and streamline daily operations."
   },
   {
-    name: "Priya Patel",
+    name: "Camiah Gillie",
     photo: "images/student3.jpg",
-    title: "CoinWise: Student Budget Coach",
+    title: "Virtual Assistant",
     description:
-      "A budgeting tool built for students living on a tight monthly allowance, with reminders before bills are due. Priya wanted something simpler than the finance apps she'd tried before."
+      "A virtual assistant business, focusing on providing reliable support to solo entrepreneurs and small business owners with one to five employees."
   },
   {
     name: "Marcus Johnson",
@@ -38,9 +38,9 @@ const students = [
   {
     name: "Carlos Seaborn",
     photo: "images/carlos-personal.png",
-    title: "PetPal: Neighborhood Pet Sitting",
+    title: "Memorable",
     description:
-      "A scheduling app that connects pet owners with trusted neighborhood sitters for short trips. Sofia built it after struggling to find a sitter for her dog during a busy finals week."
+      "Private"
   }
 ];
 
