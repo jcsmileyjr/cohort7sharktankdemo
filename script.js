@@ -8,11 +8,11 @@
 */
 const students = [
   {
-    name: "Maya Chen",
-    photo: "images/student1.jpg",
-    title: "BiteBack: Food Waste Tracker",
+    name: "Shakenya Jenkins",
+    photo: "images/shay-personal.png",
+    title: "Second Act Studios",
     description:
-      "A mobile app that helps restaurants log unsold food and suggests same-day donation pickups nearby. Maya built it after watching her family's diner throw away trays of food every night."
+      "A nonprofit organization designed to assist justice-impacted individuals by pairing documentary film production with technical training, wraparound support, and direct employer placement"
   },
   {
     name: "Jordan Lee",
@@ -36,8 +36,8 @@ const students = [
       "A directory of nearby hiking trails with difficulty ratings, trail conditions, and photos submitted by other hikers. Marcus started it to help newcomers find trails that match their skill level."
   },
   {
-    name: "Sofia Ramirez",
-    photo: "images/student5.jpg",
+    name: "Carlos Seaborn",
+    photo: "images/carlos-personal.png",
     title: "PetPal: Neighborhood Pet Sitting",
     description:
       "A scheduling app that connects pet owners with trusted neighborhood sitters for short trips. Sofia built it after struggling to find a sitter for her dog during a busy finals week."
