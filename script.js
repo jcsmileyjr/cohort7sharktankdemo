@@ -16,7 +16,7 @@ const students = [
   },
   {
     name: "James Evely",
-    photo: "images/student2.jpg",
+    photo: "images/jevenly-personal-pic.jpg",
     title: "Stockflow",
     description:
       "A Nashville-based service designed to help small business owners manage inventory and streamline daily operations."
