@@ -105,6 +105,25 @@ body {
 .student-name {
   margin: 0.5rem 0 0 0;
   font-size: 1.5rem;
+  color: var(--navy);
+  background-image: linear-gradient(90deg, var(--navy) 0%, var(--gold) 50%, var(--navy) 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: student-name-sweep 2s linear infinite;
+}
+
+@keyframes student-name-sweep {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .student-title {
