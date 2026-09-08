@@ -40,7 +40,7 @@ const students = [
     photo: "images/carlos-personal.png",
     title: "Memorable",
     description:
-      "Private"
+      "High‑value concept in early development. The core idea is intentionally withheld to protect future startup potential."
   }
 ];
 
