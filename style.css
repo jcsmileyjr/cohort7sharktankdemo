@@ -120,6 +120,7 @@ body {
   margin: 0;
   font-size: 1rem;
   line-height: 1.5;
+  text-align: left;
   /* line-clamp safety net: keeps card height consistent even if a
      description ends up longer than expected */
   display: -webkit-box;
