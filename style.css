@@ -44,7 +44,7 @@ body {
 .site-header {
   color: var(--navy);
   text-align: center;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.5rem;
 }
 
 .site-header h1 {
@@ -71,7 +71,7 @@ body {
    the "fade-out" class just toggles opacity, CSS animates the rest. */
 .student-card {
   max-width: 480px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
